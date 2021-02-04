@@ -175,34 +175,33 @@ input, select, textarea {
 }
 
 .gender-content span {
+  position: relative;
   display: inline-block;
   padding: 3px 3px 3px 20px;
-  position: relative;
 }
 
 .gender-content span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
   background-color: #fbfbfb;
   border: 1px solid #d9d9d9;
   border-radius: 50%;
-  content: '';
-  height: 14px;
-  left: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 14px;
 }
-
-.gender-content span:checked + span::after {
-  background-color: #01bfbd;
-  border-radius: 50%;
+.gender-input:checked + span::after {
   content: '';
   position: absolute;
   left: 4px;
   top: 50%;
   height: 8px;
-  transform: translateY(-50%);
   width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #01bfbd;
 }
 
 .origin-box select {

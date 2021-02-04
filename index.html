@@ -42,7 +42,11 @@
               <div class="gender-contents">
                 <label class="gender-content">
                   <input class="gender-input" type="radio" name="gender" value="male"><span>男性</span>
+                </label>
+                <label class="gender-content">
                   <input class="gender-input" type="radio" name="gender" value="female"><span>女性</span>
+                </label>
+                <label class="gender-content">
                   <input class="gender-input" type="radio" name="gender" value="other"><span>その他</span>
                 </label>
               </div>
@@ -77,11 +81,11 @@
             <div class="course-box row">
               <p class="labelFont">希望コース</p>
               <div class="course-contents">
-                <label class="course-content">
-                  <input type="checkbox" name="course" value="frontend"><span>フロントエンド</span>
-                  <input type="checkbox" name="course" value="backend"><span>バックエンド</span>
-                  <input type="checkbox" name="course" value="app"><span>アプリ</span>
-                </label>
+                <div class="course-content">
+                  <input type="checkbox" name="course" value="frontend"><label class="course-option-text" for="frontend">フロントエンド</label>
+                  <input type="checkbox" name="course" value="backend"><label class="course-option-text" for="backend">バックエンド</label>
+                  <input type="checkbox" name="course" value="app"><label class="course-option-text" for="app">アプリ</label>
+                </div>
               </div>
             </div>
             <div class="remarks-box row">
