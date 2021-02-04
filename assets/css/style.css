@@ -250,7 +250,7 @@ input, select, textarea {
   margin-top: 0;
 }
 
-.course-content span {
+.course-option-text {
   display: inline-block;
   padding-left: 25px;
   position: relative;
