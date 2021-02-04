@@ -73,6 +73,10 @@ input, select, textarea {
   -webkit-appearance: none;
 }
 
+input:focus {
+  background-color: #fff;
+}
+
 /* 固有クラス */
 .form-container {
   background-color: #fff;
@@ -222,15 +226,16 @@ input, select, textarea {
 }
 
 .select-area::after {
-  border-bottom: 2px solid #d9d9d9;
-  border-right: 2px solid #d9d9d9;
   content: '';
-  height: 5px;
+  display: inline-block;
   position: absolute;
   right: 10px;
   top: 45%;
   transform: rotate(45deg);
+  height: 5px;
   width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
 }
 
 .course-contents {
