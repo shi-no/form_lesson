@@ -104,6 +104,11 @@ input, select, textarea {
   width: 100%;
 }
 
+.color-facebook:hover {
+  background-color: #344e87;
+  border-color: transparent;
+}
+
 .color-google {
   color: #dd4b39;
   width: 100%;
@@ -251,27 +256,28 @@ input, select, textarea {
   position: relative;
 }
 
-.course-content span::before {
-  border: 1px solid #d9d9d9;
+.course-option-text::before {
   content: '';
-  height: 15px;
-  margin-top: -8px;
   position: absolute;
   left: 0;
   top: 50%;
+  height: 15px;
   width: 15px;
+  margin-top: -8px;
+  border: 1px solid #d9d9d9;
 }
 
-.course-content input:checked + span::after {
-  border-bottom: 3px solid #01bfbd;
-  border-right: 3px solid #01bfbd;
+.course-content input:checked + .course-option-text::after {
   content: '';
-  height: 16px;
   position: absolute;
   left: 6px;
-  top: -30%;
+  top: 50%;
   transform: rotate(45deg);
+  height: 16px;
   width: 8px;
+  margin-top: -12px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
 }
 
 .remarks-area {
@@ -287,6 +293,10 @@ input, select, textarea {
   cursor: pointer;
   padding: 13px;
   width: 100%;
+}
+
+.register-btn:hover {
+  background-color: #01a6a4;
 }
 
 .register-btn:active {
